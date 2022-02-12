@@ -1,8 +1,8 @@
 # frontend
 
 ### setting the environment
-yarn
 
-### test the frontend by 
+### test the frontend by
 $ cd frontend
+$ yarn
 $ yarn start
