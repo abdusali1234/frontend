@@ -1,0 +1,8 @@
+.event-head {
+    width: 100%;
+}
+
+.event-head h1 {
+    display: flex;
+    justify-content: center;
+}

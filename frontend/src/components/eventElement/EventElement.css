@@ -1,0 +1,10 @@
+.EventElement {
+    width: 40%;
+    background-color: white;
+    border: none;
+    box-shadow: 10px 3px 55px #00000029;
+    border-radius: 30px;
+
+    color: #868686;
+
+}

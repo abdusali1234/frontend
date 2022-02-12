@@ -1,11 +1,7 @@
 # frontend
 
 ### setting the environment
-$ python -m venv venv
-// mac
-$ source venv/bin/activate
-// windows
-$ venv\Scripts\activate
+yarn
 
 ### test the frontend by 
 $ cd frontend
