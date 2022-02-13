@@ -5,7 +5,7 @@ import Toilet from "./routes/toilet/Toilet";
 import Test from "./routes/test/Test";
 import Library from "./routes/library/Library";
 import Classroom from "./routes/classroom/Classroom";
-import Corridor from "./routes/classroom/Corridor";
+import Corridor from "./routes/corridor/Corridor";
 
 import "./App.css";
 
