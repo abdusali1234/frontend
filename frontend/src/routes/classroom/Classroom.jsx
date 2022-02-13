@@ -2,6 +2,8 @@
 import './Classroom.css';
 
 // Imported saved icons
+import React, {useState} from "react";
+// import EventElement from '../../components/eventElement/EventElement';
 import {ReactComponent as Dirty} from "../../icon/Dirty-floors.svg"
 import {ReactComponent as Trash} from "../../icon/Trashcan.svg"
 import {ReactComponent as Door} from "../../icon/Door.svg"
@@ -14,9 +16,11 @@ import {ReactComponent as Other} from "../../icon/Other.svg"
 
 import EventElementBox from '../../components/eventElementBox/EventElementBox';
 import EventHead from '../../components/eventHead/EventHead';
+import PopUpSubmit from "../../components/popUpSubmit/PopUpSubmit";
 
 function Classroom() {
-
+  const [isClose, setIsClose] = useState(false);
+  const [eventStatus, setEventStatus] = useState("");
   const events = [
     { id: 1, eventsName: "Dirty Floors", icon: <Dirty className="img" /> },
     { id: 2, eventsName: "Trashcan", icon: <Trash className="img" /> },
@@ -29,10 +33,22 @@ function Classroom() {
     { id: 9, eventsName: "Other", icon: <Other className="img" /> },
   ];
 
+  function changeEventStatus(text) {
+    console.log(text);
+    setEventStatus(text);
+    console.log(eventStatus);
+    setIsClose(!isClose);
+  }
+
+  function changeCloseStat() {
+    setIsClose(!isClose);
+  }
+
   return (
     <div className="Classroom">
+      {isClose ? <PopUpSubmit changeCloseStat={changeCloseStat} eventStatus={eventStatus}/> : null}
       <EventHead eventname="Report a problem" eventlocation="Main Quad"/>
-      <EventElementBox events={events}/>
+      <EventElementBox events={events} close={isClose} changeEventStatus={changeEventStatus}/>
     </div>
   );
 }

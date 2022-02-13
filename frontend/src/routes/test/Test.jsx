@@ -17,6 +17,8 @@ import EventHead from '../../components/eventHead/EventHead';
 import PopUpSubmit from "../../components/popUpSubmit/PopUpSubmit";
 
 // Construct webpage
+import UrgentButton from "../../components/urgentButton/UrgentButton";
+
 function Test() {
   const [isClose, setIsClose] = useState(false);
   const [eventStatus, setEventStatus] = useState("");
@@ -48,6 +50,7 @@ function Test() {
         <EventHead eventname="toilet" />
         <EventElementBox events={events} close={isClose} changeEventStatus={changeEventStatus} />
       </div>
+      <UrgentButton />
     </div>
   );
 }
