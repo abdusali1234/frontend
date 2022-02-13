@@ -6,6 +6,7 @@ import Test from "./routes/test/Test";
 import Library from "./routes/library/Library";
 import Classroom from "./routes/classroom/Classroom";
 import Corridor from "./routes/corridor/Corridor";
+import Commonspaces from "./routes/commonspaces/Commonspaces";
 
 import "./App.css";
 
@@ -19,6 +20,7 @@ function App() {
           <Route path="Library" element={<Library />} />
           <Route path="classroom" element={<Classroom />} />
           <Route path="corridor" element={<Corridor />} />
+          <Route path="corridor" element={<Commonspaces />} />
         </Routes>
       </BrowserRouter>
     </div>
