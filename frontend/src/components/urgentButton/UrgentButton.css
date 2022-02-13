@@ -1,0 +1,47 @@
+.urgent-button {
+    display: flex;
+    justify-content: center;
+
+    position: fixed;
+    left: 38%;
+    bottom: 30px;
+}
+
+.urgent-button button {
+    cursor: pointer;
+    border: solid 2px #f54c53;
+    box-shadow: 10px 3px 55px #00000029;
+    font-size: 30px;
+    padding: 30px 35%;
+    background-color: white;
+}
+
+.urgent-button button:hover {
+    cursor: pointer;
+    box-shadow: 10px 3px 55px #00000029;
+    background-color: #f54c53;
+
+    position: relative;
+}
+
+.urgent-button button h3 {
+    margin-top: 10px;
+    font-size: 20px;
+    color: #1e1e1e;
+}
+
+.small-img {
+    width: 150px;
+    height: 150px;
+    /* display: flex;
+    justify-content: center; */
+}
+
+@media (min-width: 750px) {
+    
+    .urgent-button {
+        position: fixed;
+        left: 46%;
+        bottom: 30px;
+    }
+}

@@ -1,4 +1,5 @@
 import './Library.css';
+import React, {useState} from "react";
 // import EventElement from '../../components/eventElement/EventElement';
 import {ReactComponent as PC} from "../../icon/PC.svg"
 import {ReactComponent as Plug} from "../../icon/Plug.svg"
@@ -10,9 +11,11 @@ import {ReactComponent as Other} from "../../icon/Other.svg"
 
 import EventElementBox from '../../components/eventElementBox/EventElementBox';
 import EventHead from '../../components/eventHead/EventHead';
+import PopUpSubmit from "../../components/popUpSubmit/PopUpSubmit";
 
 function Library() {
-
+  const [isClose, setIsClose] = useState(false);
+  const [eventStatus, setEventStatus] = useState("");
   const events = [
     { id: 1, eventsName: "PC", icon: <PC className="img" /> },
     { id: 2, eventsName: "Plug", icon: <Plug className="img" /> },
@@ -23,10 +26,22 @@ function Library() {
     { id: 7, eventsName: "Other", icon: <Other className="img" /> },
   ];
 
+  function changeEventStatus(text) {
+    console.log(text);
+    setEventStatus(text);
+    console.log(eventStatus);
+    setIsClose(!isClose);
+  }
+
+  function changeCloseStat() {
+    setIsClose(!isClose);
+  }
+
   return (
     <div className="Library">
+      {isClose ? <PopUpSubmit changeCloseStat={changeCloseStat} eventStatus={eventStatus}/> : null}
       <EventHead eventname="Report a problem" eventlocation="Science library"/>
-      <EventElementBox events={events}/>
+      <EventElementBox events={events} close={isClose} changeEventStatus={changeEventStatus}/>
     </div>
   );
 }
