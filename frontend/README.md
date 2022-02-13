@@ -83,4 +83,4 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 The following people have contributed to Report UCL:
 
-Thatchawin Leelawat, Francesca Parrotta, Norman Fediv, Catarina Alves
+Thatchawin Leelawat, Francesca Parrotta, Norman Fediv, Catarina Alves, Abdus Ali
