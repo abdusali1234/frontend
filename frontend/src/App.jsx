@@ -20,7 +20,7 @@ function App() {
           <Route path="Library" element={<Library />} />
           <Route path="classroom" element={<Classroom />} />
           <Route path="corridor" element={<Corridor />} />
-          <Route path="corridor" element={<Commonspaces />} />
+          <Route path="commonspaces" element={<Commonspaces />} />
         </Routes>
       </BrowserRouter>
     </div>
