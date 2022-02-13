@@ -25,7 +25,7 @@ function Library() {
 
   return (
     <div className="Library">
-      <EventHead eventname="idn"/>
+      <EventHead eventname="Report a problem on"/>
       <EventElementBox events={events}/>
     </div>
   );
