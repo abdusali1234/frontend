@@ -1,0 +1,26 @@
+.event-head {
+    display: flex;
+    justify-content: center;
+}
+
+.event-head .event-button {
+    cursor: pointer;
+    background-color: white;
+    border-color: #15202b;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.event-head .event-button:hover {
+    color: white;
+    border-color: white;
+    background-color: #c0c0c0;
+}
+
+/* .event-head .Cancle {
+    
+}
+
+.event-head .Confirm {
+
+} */

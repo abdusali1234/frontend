@@ -7,7 +7,7 @@ function EventElementBox(props) {
   return (
     <div className="element-box">
       {events.map((event) => {
-        return <EventElement eventname={event.eventsName} icon={event.icon} />;
+        return <EventElement eventname={event.eventsName} icon={event.icon} changeEventStatus={props.changeEventStatus} eventStatus={props.eventStatus}/>;
       })}
     </div>
   );

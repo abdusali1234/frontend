@@ -1,14 +1,43 @@
 .EventElement {
+    cursor: pointer;
     width: 40%;
     background-color: wheat;
+    padding: 15px;
     border: none;
     box-shadow: 10px 3px 55px #00000029;
     border-radius: 30px;
-
-    color: #868686;
-
 } 
+
+.EventElement:hover {
+    background-color: #ebbd68;
+} 
+
 .EventElement h3 {
+    display: flex;
+    justify-content: center;
     color: reprgb(201, 57, 141);
-
 } 
+
+.event-element-icon {
+    display: flex;
+    justify-content: center;
+}
+
+@media (min-width: 750px) {
+    .EventElement {
+        width: 40%;
+    } 
+    .EventElement h3 {
+        padding-top: 30px;
+        font-size: 30px;
+    }
+    .event-element-icon {
+        padding: 30px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .EventElement {
+        width: 25%;
+    } 
+}
