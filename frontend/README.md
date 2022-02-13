@@ -1,6 +1,6 @@
-# Report UCL - Frontend
+#  UCL Resolve - Frontend
 
-Welcome to the frontend of Report UCL! Report UCL allows any student, staff or visitor to easily report any issue they encounter to UCL Estates.
+Welcome to the frontend of UCL Resolve! UCL Resolve allows any student, staff or visitor to easily report any issue they encounter to UCL Estates.
 
 ## Instalation
 
@@ -81,6 +81,6 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Contributors
 
-The following people have contributed to Report UCL:
+The following people have contributed to UCL Resolve:
 
-Thatchawin Leelawat, Francesca Parrotta, Norman Fediv, Catarina Alves
+Thatchawin Leelawat, Francesca Parrotta, Norman Fediv, Catarina Alves, Abdus Ali
