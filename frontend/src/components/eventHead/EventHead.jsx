@@ -6,7 +6,7 @@ function EventHead(props) {
   return (
     <div className="event-head">
       <h1>{props.eventname}</h1>
-      <p>What is the problem on&nbsp;<span>{props.eventlocation}</span>?</p>
+      <p>What is the problem at the&nbsp;<span>{props.eventlocation}</span>?</p>
     </div>
   );
 }
