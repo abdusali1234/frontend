@@ -1,7 +1,5 @@
-// Import css information
+// Import css information and useful functions
 import "./Test.css";
-
-// Import other things
 import React, {useState} from "react";
 
 // Imported saved icons
@@ -31,6 +29,7 @@ function Test() {
     { id: 5, eventsName: "Other", icon: <Other className="img" /> },
   ];
 
+  // Modify the query to later send to API and open the pop-up
   function changeEventStatus(text) {
     console.log(text);
     setEventStatus(text);
@@ -38,16 +37,16 @@ function Test() {
     setIsClose(!isClose);
   }
 
+  // Close the pop-up
   function changeCloseStat() {
     setIsClose(!isClose);
   }
 
   return (
     <div>
-      {isClose ? <PopUpSubmit changeCloseStat={changeCloseStat} eventStatus={eventStatus}/> : null}
-
-      <div className="Toilet">
-        <EventHead eventname="toilet" />
+      <div className="Test">
+        {isClose ? <PopUpSubmit changeCloseStat={changeCloseStat} eventStatus={eventStatus}/> : null}
+        <EventHead eventname="Report a problem" eventlocation="test at Test Place"/>
         <EventElementBox events={events} close={isClose} changeEventStatus={changeEventStatus} />
       </div>
       <UrgentButton />
