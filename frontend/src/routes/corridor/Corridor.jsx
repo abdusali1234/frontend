@@ -46,11 +46,15 @@ function Corridor() {
     setIsClose(!isClose);
   }
 
+
   return (
-    <div className="Corridor">
-      {isClose ? <PopUpSubmit changeCloseStat={changeCloseStat} eventStatus={eventStatus}/> : null}
-      <EventHead eventname="Report a problem" eventlocation="KLB-Physics Corridor"/>
-      <EventElementBox events={events} close={isClose} changeEventStatus={changeEventStatus}/>
+    <div>
+      <div className="Corridor">
+        {isClose ? <PopUpSubmit changeCloseStat={changeCloseStat} eventStatus={eventStatus}/> : null}
+        <EventHead eventname="Report a problem" eventlocation="KLB-Physics Corridor"/>
+        <EventElementBox events={events} close={isClose} changeEventStatus={changeEventStatus}/>
+      </div>
+      <UrgentButton />
     </div>
   );
 }

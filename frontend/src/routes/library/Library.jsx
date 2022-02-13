@@ -46,10 +46,13 @@ function Library() {
 
 
   return (
-    <div className="Library">
-      {isClose ? <PopUpSubmit changeCloseStat={changeCloseStat} eventStatus={eventStatus}/> : null}
-      <EventHead eventname="Report a problem" eventlocation="Science library"/>
-      <EventElementBox events={events} close={isClose} changeEventStatus={changeEventStatus}/>
+    <div>
+      <div className="Library">
+        {isClose ? <PopUpSubmit changeCloseStat={changeCloseStat} eventStatus={eventStatus}/> : null}
+        <EventHead eventname="Report a problem" eventlocation="Science library"/>
+        <EventElementBox events={events} close={isClose} changeEventStatus={changeEventStatus}/>
+      </div>
+      <UrgentButton />
     </div>
   );
 }

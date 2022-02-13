@@ -13,6 +13,7 @@ import {ReactComponent as Other} from "../../icon/Other.svg"
 import EventElementBox from '../../components/eventElementBox/EventElementBox';
 import EventHead from '../../components/eventHead/EventHead';
 import PopUpSubmit from "../../components/popUpSubmit/PopUpSubmit";
+import UrgentButton from "../../components/urgentButton/UrgentButton";
 
 // Construct webpage
 function Toilet() {
@@ -42,11 +43,13 @@ function Toilet() {
 
 
   return (
-    <div className="Toilet">
-      {isClose ? <PopUpSubmit changeCloseStat={changeCloseStat} eventStatus={eventStatus}/> : null}
-      <EventHead eventname="Report a problem" eventlocation="toilet at Student centre"/>
-      <EventElementBox events={events} close={isClose} changeEventStatus={changeEventStatus}/>
-      
+    <div>
+      <div className="Toilet">
+        {isClose ? <PopUpSubmit changeCloseStat={changeCloseStat} eventStatus={eventStatus}/> : null}
+        <EventHead eventname="Report a problem" eventlocation="toilet at Student centre"/>
+        <EventElementBox events={events} close={isClose} changeEventStatus={changeEventStatus}/>
+      </div>
+      <UrgentButton />
     </div>
   );
 }

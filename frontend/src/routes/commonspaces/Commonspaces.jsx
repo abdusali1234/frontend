@@ -44,11 +44,15 @@ function Commonspaces() {
     setIsClose(!isClose);
   }
 
+
   return (
-    <div className="Commonspaces">
-      {isClose ? <PopUpSubmit changeCloseStat={changeCloseStat} eventStatus={eventStatus}/> : null}
-      <EventHead eventname="Report a problem" eventlocation="Student centre kitchen"/>
-      <EventElementBox events={events} close={isClose} changeEventStatus={changeEventStatus}/>
+    <div>
+      <div className="Commonspaces">
+        {isClose ? <PopUpSubmit changeCloseStat={changeCloseStat} eventStatus={eventStatus}/> : null}
+        <EventHead eventname="Report a problem" eventlocation="Student centre kitchen"/>
+        <EventElementBox events={events} close={isClose} changeEventStatus={changeEventStatus}/>
+      </div>
+      <UrgentButton />
     </div>
   );
 }
