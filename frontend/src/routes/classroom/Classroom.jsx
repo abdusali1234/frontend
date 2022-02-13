@@ -1,12 +1,13 @@
 import './Classroom.css';
 // import EventElement from '../../components/eventElement/EventElement';
-import {ReactComponent as Alarm} from "../../icon/Alarm.svg"
 import {ReactComponent as Dirty} from "../../icon/Dirty-floors.svg"
 import {ReactComponent as Trash} from "../../icon/Trashcan.svg"
 import {ReactComponent as Door} from "../../icon/Door.svg"
-import {ReactComponent as GenearlDirt} from "../../icon/Generaldirt.svg"
-import {ReactComponent as VendingMachine} from "../../icon/Vendingmachines.svg"
-import {ReactComponent as WaterFountain} from "../../icon/Waterfountain.svg"
+import {ReactComponent as GeneralDirt} from "../../icon/Generaldirt.svg"
+import {ReactComponent as Heater} from "../../icon/Heater.svg"
+import {ReactComponent as PC} from "../../icon/PC.svg"
+import {ReactComponent as Plug} from "../../icon/Plug.svg"
+import {ReactComponent as Projector} from "../../icon/Projector.svg"
 import {ReactComponent as Other} from "../../icon/Other.svg"
 
 import EventElementBox from '../../components/eventElementBox/EventElementBox';
