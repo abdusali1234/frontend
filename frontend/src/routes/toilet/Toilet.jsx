@@ -17,12 +17,9 @@ import PopUpSubmit from "../../components/popUpSubmit/PopUpSubmit";
 
 // Construct webpage
 function Toilet() {
-<<<<<<< HEAD
   // Add the events
-=======
   const [isClose, setIsClose] = useState(false);
   const [eventStatus, setEventStatus] = useState("");
->>>>>>> main
   const events = [
     { id: 1, eventsName: "Toiletbowl", icon: <Toiletbowl className="img" /> },
     { id: 2, eventsName: "Toiletpaper", icon: <Toiletpaper className="img" /> },
