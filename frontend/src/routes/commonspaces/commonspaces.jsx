@@ -1,4 +1,4 @@
-import "./Commonspaces.css";
+import "./commonspaces.css";
 // import EventElement from '../../components/eventElement/EventElement';
 import {ReactComponent as Vendingmachines} from "../../icon/Vendingmachines.svg"
 import {ReactComponent as Microwave} from "../../icon/Microwave.svg"
@@ -19,7 +19,7 @@ function Commonspaces() {
     { id: 4, eventsName: "Trashcan", icon: <Trashcan className="img" /> },
     { id: 5, eventsName: "Water Fountain", icon: <Waterfountain className="img" /> },
     { id: 5, eventsName: "Other", icon: <Other className="img" /> },
-  ];  
+  ];
 
   return (
     <div className="Commmonspaces">
