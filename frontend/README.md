@@ -1,6 +1,11 @@
-# Getting Started with Create React App
+# Report UCL - Frontend
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Welcome to the frontend of Report UCL! Report UCL allows any student, staff or visitor to easily report any issue they encounter to UCL Estates.
+
+## Instalation
+
+Install `yarn`.
+
 
 ## Available Scripts
 
@@ -68,3 +73,14 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `yarn build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+## Software
+
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+
+## Contributors
+
+The following people have contributed to Report UCL:
+
+Thatchawin Leelawat, Francesca Parrotta, Norman Fediv, Catarina Alves
