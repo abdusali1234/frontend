@@ -4,9 +4,9 @@ import {ReactComponent as Alarm} from "../../icon/Alarm.svg"
 import {ReactComponent as Dirty} from "../../icon/Dirty-floors.svg"
 import {ReactComponent as Trash} from "../../icon/Trashcan.svg"
 import {ReactComponent as Door} from "../../icon/Door.svg"
-import {ReactComponent as GenearlDirt} from "../../icon/General-dirt_1.svg"
-import {ReactComponent as VendingMachine} from "../../icon/Vending machines.svg"
-import {ReactComponent as WaterFountain} from "../../icon/Water fountain .svg"
+import {ReactComponent as GenearlDirt} from "../../icon/Generaldirt.svg"
+import {ReactComponent as VendingMachine} from "../../icon/Vendingmachines.svg"
+import {ReactComponent as WaterFountain} from "../../icon/Waterfountain.svg"
 import {ReactComponent as Other} from "../../icon/Other.svg"
 
 
