@@ -9,8 +9,7 @@ import Corridor from "./routes/Corridor/Corridor";
 import "./App.css";
 
 function App() {
-  return (
-    <div>
+      <div>
       <BrowserRouter>
         <Routes>
           <Route exact path="/" element={<Test />} />
