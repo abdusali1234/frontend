@@ -1,7 +1,7 @@
 .EventElement {
     cursor: pointer;
     width: 40%;
-    background-color: wheat;
+    background-color: white;
     padding: 15px;
     border: none;
     box-shadow: 10px 3px 55px #00000029;
@@ -9,7 +9,8 @@
 } 
 
 .EventElement:hover {
-    background-color: #ebbd68;
+    background-color: #B5BD00;
+    color: white
 } 
 
 .EventElement h3 {
