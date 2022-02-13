@@ -1,16 +1,22 @@
 .event-head {
     width: 100%;
-    color: #651D32
+    color: #651D32;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .event-head h1 {
     display: flex;
     justify-content: center;
+    margin-top: 10px;
 }
 
 .event-head p {
     display: flex;
     justify-content: center;
+    margin-top: 15px;
+    margin-bottom: 20px;
 }
 
 .event-head span {
