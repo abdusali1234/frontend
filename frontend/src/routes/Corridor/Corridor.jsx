@@ -13,7 +13,7 @@ import {ReactComponent as Other} from "../../icon/Other.svg"
 import EventElementBox from '../../components/eventElementBox/EventElementBox';
 import EventHead from '../../components/eventHead/EventHead';
 
-function Library() {
+function Corridor() {
 
   const events = [
     { id: 1, eventsName: "Alarm", icon: <Alarm className="img" /> },
