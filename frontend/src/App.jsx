@@ -16,7 +16,8 @@ function App() {
           <Route path="toilet" element={<Toilet />} />
           <Route path="Id_1" element={<ID1 />} />
           <Route path="Library" element={<Library />} />
-          <Route path="Corridor" element={<Corridor />} />
+          <Route path="Corridor" element={<Corridor />} />         
+           <Route path="commonspaces" element={<commonspaces />} />
         </Routes>
       </BrowserRouter>
     </div>
