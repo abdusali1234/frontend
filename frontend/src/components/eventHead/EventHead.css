@@ -1,5 +1,9 @@
 .event-head {
     width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .event-head h1 {
