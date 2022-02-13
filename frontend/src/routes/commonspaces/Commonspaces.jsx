@@ -1,6 +1,8 @@
+// Import css information and useful functions
 import './Commonspaces.css';
 import React, {useState} from "react";
-// import EventElement from '../../components/eventElement/EventElement';
+
+// Imported saved icons
 import {ReactComponent as Microwave} from "../../icon/Microwave.svg"
 import {ReactComponent as Dirty} from "../../icon/Dirty-floors.svg"
 import {ReactComponent as Trash} from "../../icon/Trashcan.svg"
@@ -9,13 +11,16 @@ import {ReactComponent as VendingMachine} from "../../icon/Vendingmachines.svg"
 import {ReactComponent as WaterFountain} from "../../icon/Waterfountain.svg"
 import {ReactComponent as Other} from "../../icon/Other.svg"
 
+// Import Elements needed for the page
 import EventElementBox from '../../components/eventElementBox/EventElementBox';
 import EventHead from '../../components/eventHead/EventHead';
 import PopUpSubmit from "../../components/popUpSubmit/PopUpSubmit";
 
+// Construct webpage
 function Commonspaces() {
   const [isClose, setIsClose] = useState(false);
   const [eventStatus, setEventStatus] = useState("");
+  // Add the events
   const events = [
     { id: 1, eventsName: "Microwave", icon: <Microwave className="img" /> },
     { id: 2, eventsName: "Dirty Floors", icon: <Dirty className="img" /> },
@@ -26,6 +31,7 @@ function Commonspaces() {
     { id: 7, eventsName: "Other", icon: <Other className="img" /> },
   ];
 
+  // Modify the query to later send to API and open the pop-up
   function changeEventStatus(text) {
     console.log(text);
     setEventStatus(text);
@@ -33,6 +39,7 @@ function Commonspaces() {
     setIsClose(!isClose);
   }
 
+  // Close the pop-up
   function changeCloseStat() {
     setIsClose(!isClose);
   }

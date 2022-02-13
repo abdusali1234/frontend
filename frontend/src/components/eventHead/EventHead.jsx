@@ -1,5 +1,6 @@
 import "./EventHead.css";
 
+// Construct the top of the webapp (title and small description)
 function EventHead(props) {
 
   return (

@@ -1,20 +1,26 @@
+// Import css information and useful functions
 import "./Test.css";
 import React, {useState} from "react";
+
+// Imported saved icons
 import {ReactComponent as Toiletbowl} from "../../icon/Toiletbowl.svg"
 import {ReactComponent as Toiletpaper} from "../../icon/Toiletpaper.svg"
 import {ReactComponent as Dryer} from "../../icon/Dryer.svg"
 import {ReactComponent as Trashcan} from "../../icon/Trashcan.svg"
 import {ReactComponent as Other} from "../../icon/Other.svg"
 
+// Import Elements needed for the page
 import EventElementBox from '../../components/eventElementBox/EventElementBox';
 import EventHead from '../../components/eventHead/EventHead';
 import PopUpSubmit from "../../components/popUpSubmit/PopUpSubmit";
 
+// Construct webpage
 import UrgentButton from "../../components/urgentButton/UrgentButton";
 
 function Test() {
   const [isClose, setIsClose] = useState(false);
   const [eventStatus, setEventStatus] = useState("");
+  // Add the events
   const events = [
     { id: 1, eventsName: "Toiletbowl", icon: <Toiletbowl className="img" /> },
     { id: 2, eventsName: "Toiletpaper", icon: <Toiletpaper className="img" /> },
@@ -23,6 +29,7 @@ function Test() {
     { id: 5, eventsName: "Other", icon: <Other className="img" /> },
   ];
 
+  // Modify the query to later send to API and open the pop-up
   function changeEventStatus(text) {
     console.log(text);
     setEventStatus(text);
@@ -30,16 +37,16 @@ function Test() {
     setIsClose(!isClose);
   }
 
+  // Close the pop-up
   function changeCloseStat() {
     setIsClose(!isClose);
   }
 
   return (
     <div>
-      {isClose ? <PopUpSubmit changeCloseStat={changeCloseStat} eventStatus={eventStatus}/> : null}
-
-      <div className="Toilet">
-        <EventHead eventname="toilet" />
+      <div className="Test">
+        {isClose ? <PopUpSubmit changeCloseStat={changeCloseStat} eventStatus={eventStatus}/> : null}
+        <EventHead eventname="Report a problem" eventlocation="test at Test Place"/>
         <EventElementBox events={events} close={isClose} changeEventStatus={changeEventStatus} />
       </div>
       <UrgentButton />

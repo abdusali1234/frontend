@@ -1,3 +1,4 @@
+// Import modules
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
@@ -10,6 +11,8 @@ import Commonspaces from "./routes/commonspaces/Commonspaces";
 
 import "./App.css";
 
+// Include all the available pages in the app. This can be extended when more
+// pages became available
 function App() {
     return (
       <div>

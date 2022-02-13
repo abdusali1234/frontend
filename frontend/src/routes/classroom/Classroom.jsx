@@ -1,6 +1,8 @@
+// Import css information and useful functions
 import './Classroom.css';
 import React, {useState} from "react";
-// import EventElement from '../../components/eventElement/EventElement';
+
+// Imported saved icons
 import {ReactComponent as Dirty} from "../../icon/Dirty-floors.svg"
 import {ReactComponent as Trash} from "../../icon/Trashcan.svg"
 import {ReactComponent as Door} from "../../icon/Door.svg"
@@ -11,13 +13,16 @@ import {ReactComponent as Plug} from "../../icon/Plug.svg"
 import {ReactComponent as Projector} from "../../icon/Projector.svg"
 import {ReactComponent as Other} from "../../icon/Other.svg"
 
+// Import Elements needed for the page
 import EventElementBox from '../../components/eventElementBox/EventElementBox';
 import EventHead from '../../components/eventHead/EventHead';
 import PopUpSubmit from "../../components/popUpSubmit/PopUpSubmit";
 
+// Construct webpage
 function Classroom() {
   const [isClose, setIsClose] = useState(false);
   const [eventStatus, setEventStatus] = useState("");
+  // Add the events
   const events = [
     { id: 1, eventsName: "Dirty Floors", icon: <Dirty className="img" /> },
     { id: 2, eventsName: "Trashcan", icon: <Trash className="img" /> },
@@ -30,6 +35,7 @@ function Classroom() {
     { id: 9, eventsName: "Other", icon: <Other className="img" /> },
   ];
 
+  // Modify the query to later send to API and open the pop-up
   function changeEventStatus(text) {
     console.log(text);
     setEventStatus(text);
@@ -37,6 +43,7 @@ function Classroom() {
     setIsClose(!isClose);
   }
 
+  // Close the pop-up
   function changeCloseStat() {
     setIsClose(!isClose);
   }

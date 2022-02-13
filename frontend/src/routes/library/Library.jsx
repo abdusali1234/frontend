@@ -1,6 +1,8 @@
+// Import css information and useful functions
 import './Library.css';
 import React, {useState} from "react";
-// import EventElement from '../../components/eventElement/EventElement';
+
+// Imported saved icons
 import {ReactComponent as PC} from "../../icon/PC.svg"
 import {ReactComponent as Plug} from "../../icon/Plug.svg"
 import {ReactComponent as Dirty} from "../../icon/Dirty-floors.svg"
@@ -9,13 +11,16 @@ import {ReactComponent as Printer} from "../../icon/Printer.svg"
 import {ReactComponent as Borrow} from "../../icon/Borrow.svg"
 import {ReactComponent as Other} from "../../icon/Other.svg"
 
+// Import Elements needed for the page
 import EventElementBox from '../../components/eventElementBox/EventElementBox';
 import EventHead from '../../components/eventHead/EventHead';
 import PopUpSubmit from "../../components/popUpSubmit/PopUpSubmit";
 
+// Construct webpage
 function Library() {
   const [isClose, setIsClose] = useState(false);
   const [eventStatus, setEventStatus] = useState("");
+  // Add the events
   const events = [
     { id: 1, eventsName: "PC", icon: <PC className="img" /> },
     { id: 2, eventsName: "Plug", icon: <Plug className="img" /> },
@@ -26,6 +31,7 @@ function Library() {
     { id: 7, eventsName: "Other", icon: <Other className="img" /> },
   ];
 
+  // Modify the query to later send to API and open the pop-up
   function changeEventStatus(text) {
     console.log(text);
     setEventStatus(text);
@@ -33,9 +39,11 @@ function Library() {
     setIsClose(!isClose);
   }
 
+  // Close the pop-up
   function changeCloseStat() {
     setIsClose(!isClose);
   }
+
 
   return (
     <div className="Library">
