@@ -19,15 +19,15 @@ function Corridor() {
     { id: 2, eventsName: "Dirty Floors", icon: <Dirty className="img" /> },
     { id: 3, eventsName: "Trashcan", icon: <Trash className="img" /> },
     { id: 4, eventsName: "Door", icon: <Door className="img" /> },
-    { id: 5, eventsName: "General Dirt", icon: <GenearlDirt className="img" /> },
+    { id: 5, eventsName: "General Dirt", icon: <GeneralDirt className="img" /> },
     { id: 6, eventsName: "Vending Machine", icon: <VendingMachine className="img" /> },
     { id: 7, eventsName: "Water Fountain", icon: <WaterFountain className="img" /> },
     { id: 8, eventsName: "Other", icon: <Other className="img" /> },
   ];
 
   return (
-    <div className="Classroom">
-      <EventHead eventname="Report a problem" eventlocation="Main Quad"/>
+    <div className="Corridor">
+      <EventHead eventname="Report a problem" eventlocation="KLB-Physics Corridor"/>
       <EventElementBox events={events}/>
     </div>
   );
