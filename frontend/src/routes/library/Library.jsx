@@ -15,6 +15,7 @@ import {ReactComponent as Other} from "../../icon/Other.svg"
 import EventElementBox from '../../components/eventElementBox/EventElementBox';
 import EventHead from '../../components/eventHead/EventHead';
 import PopUpSubmit from "../../components/popUpSubmit/PopUpSubmit";
+import UrgentButton from "../../components/urgentButton/UrgentButton";
 
 // Construct webpage
 function Library() {
