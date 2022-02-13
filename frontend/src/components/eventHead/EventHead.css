@@ -6,3 +6,12 @@
     display: flex;
     justify-content: center;
 }
+
+.event-head p {
+    display: flex;
+    justify-content: center;
+}
+
+.event-head span {
+    font-weight: bold;
+}
