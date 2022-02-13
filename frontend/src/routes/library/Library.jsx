@@ -25,7 +25,7 @@ function Library() {
 
   return (
     <div className="Library">
-      <EventHead eventname="Report a problem on"/>
+      <EventHead eventname="Report a problem" eventlocation="Science library"/>
       <EventElementBox events={events}/>
     </div>
   );
