@@ -21,13 +21,8 @@ function Test() {
     { id: 5, eventsName: "Other", icon: <Other className="img" /> },
   ];
 
-  // const fetchedResult = (result) => {
-  //   setnotYetSearched(false);
-  //   const new_result = result;
-  //   setSearchResults(new_result);
-  // };
-
   function changeEventStatus(text) {
+    console.log(text);
     setEventStatus(text);
     console.log(eventStatus);
     setIsClose(!isClose);
@@ -35,12 +30,11 @@ function Test() {
 
   function changeCloseStat() {
     setIsClose(!isClose);
-    console.log(isClose);
   }
 
   return (
     <div>
-      {isClose ? <PopUpSubmit changeCloseStat={changeCloseStat} /> : null}
+      {isClose ? <PopUpSubmit changeCloseStat={changeCloseStat} eventStatus={eventStatus}/> : null}
 
       <div className="Toilet">
         <EventHead eventname="toilet" />

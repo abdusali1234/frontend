@@ -10,7 +10,7 @@ function PopUpSubmit(props) {
             <div className="pop-up-submit-p">Are you sure you want to report this issue to ucl estate team</div>
             <div className="pop-up-btn">
                 <ActionButton action='Cancel' changeCloseStat={props.changeCloseStat}/>
-                <ActionButton action='Confirm' fetchedResult={props.fetchedResult} changeCloseStat={props.changeCloseStat} fetchResult={props.fetchResult} />
+                <ActionButton action='Confirm' changeCloseStat={props.changeCloseStat} eventStatus={props.eventStatus} />
             </div>
           </div>
       </div>
