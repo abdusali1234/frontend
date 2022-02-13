@@ -1,6 +1,5 @@
 import "./UrgentButton.css";
 import React, {useState} from "react";
-import {ReactComponent as Alarm} from "../../icon/Alarm.svg";
 import UrgentPopUp from "../urgentPopUp/UrgentPopUp";
 
 function UrgentButton() {

@@ -39,6 +39,7 @@ function Toilet() {
       {isClose ? <PopUpSubmit changeCloseStat={changeCloseStat} eventStatus={eventStatus}/> : null}
       <EventHead eventname="toilet"/>
       <EventElementBox events={events} close={isClose} changeEventStatus={changeEventStatus}/>
+      
     </div>
   );
 }
