@@ -4,8 +4,8 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Toilet from "./routes/toilet/Toilet";
 import Test from "./routes/test/Test";
 import Library from "./routes/library/Library";
-import Corridor from "./routes/Corridor/Corridor";
-import Classroom from "./routes/Classroom/Classroom";
+import Corridor from "./routes/corridor/Corridor";
+import Classroom from "./routes/classroom/Classroom";
 
 import "./App.css";
 
