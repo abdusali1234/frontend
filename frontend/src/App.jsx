@@ -4,6 +4,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Toilet from "./routes/toilet/Toilet";
 import Test from "./routes/test/Test";
 import Library from "./routes/library/Library";
+import Classroom from "./routes/classroom/Classroom";
 
 import "./App.css";
 
@@ -15,6 +16,7 @@ function App() {
           <Route exact path="/" element={<Test />} />
           <Route path="toilet" element={<Toilet />} />
           <Route path="Library" element={<Library />} />
+          <Route path="classroom" element={<Classroom />} />
         </Routes>
       </BrowserRouter>
     </div>
