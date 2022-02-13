@@ -1,4 +1,4 @@
-import './Toilet.css';
+import "./Toilet.css";
 // import EventElement from '../../components/eventElement/EventElement';
 import {ReactComponent as Toiletbowl} from "../../icon/Toiletbowl.svg"
 import {ReactComponent as Toiletpaper} from "../../icon/Toiletpaper.svg"
@@ -21,7 +21,7 @@ function Toilet() {
 
   return (
     <div className="Toilet">
-      <EventHead eventname="id18"/>
+      <EventHead eventname="toilet"/>
       <EventElementBox events={events}/>
     </div>
   );
