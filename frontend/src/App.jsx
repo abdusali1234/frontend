@@ -5,6 +5,7 @@ import Toilet from "./routes/toilet/Toilet";
 import Test from "./routes/test/Test";
 import ID1 from "./routes/ID1/ID1";
 import Library from "./routes/library/Library";
+import Corridor from "./routes/Corridor/Corridor";
 import "./App.css";
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
           <Route path="toilet" element={<Toilet />} />
           <Route path="Id_1" element={<ID1 />} />
           <Route path="Library" element={<Library />} />
+          <Route path="Corridor" element={<Corridor />} />
         </Routes>
       </BrowserRouter>
     </div>
