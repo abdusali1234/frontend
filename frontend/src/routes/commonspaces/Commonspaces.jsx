@@ -1,5 +1,7 @@
+// Import css information
 import './Commonspaces.css';
-// import EventElement from '../../components/eventElement/EventElement';
+
+// Imported saved icons
 import {ReactComponent as Microwave} from "../../icon/Microwave.svg"
 import {ReactComponent as Dirty} from "../../icon/Dirty-floors.svg"
 import {ReactComponent as Trash} from "../../icon/Trashcan.svg"

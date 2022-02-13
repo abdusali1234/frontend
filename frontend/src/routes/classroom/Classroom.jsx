@@ -1,5 +1,7 @@
+// Import css information
 import './Classroom.css';
-// import EventElement from '../../components/eventElement/EventElement';
+
+// Imported saved icons
 import {ReactComponent as Dirty} from "../../icon/Dirty-floors.svg"
 import {ReactComponent as Trash} from "../../icon/Trashcan.svg"
 import {ReactComponent as Door} from "../../icon/Door.svg"

@@ -1,5 +1,7 @@
+// Import css information
 import './Corridor.css';
-// import EventElement from '../../components/eventElement/EventElement';
+
+// Imported saved icons
 import {ReactComponent as Alarm} from "../../icon/Alarm.svg"
 import {ReactComponent as Dirty} from "../../icon/Dirty-floors.svg"
 import {ReactComponent as Trash} from "../../icon/Trashcan.svg"
