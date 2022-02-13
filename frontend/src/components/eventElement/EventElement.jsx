@@ -3,7 +3,7 @@ import "./EventElement.css";
 function EventElement(props) {
   
   return (
-    <div className="EventElement">
+    <div className="EventElement" onClick={props.changeEventStatus}>
       <div>
         <h3>{props.eventname}</h3>
       </div>

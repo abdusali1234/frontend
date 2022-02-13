@@ -28,18 +28,23 @@ function Test() {
   // };
 
   function changeEventStatus(text) {
-    setEventStatus(text)
-    console.log(eventStatus)
+    setEventStatus(text);
+    console.log(eventStatus);
     setIsClose(!isClose);
+  }
+
+  function changeCloseStat() {
+    setIsClose(!isClose);
+    console.log(isClose);
   }
 
   return (
     <div>
-      {isClose ? <PopUpSubmit /> : null}
+      {isClose ? <PopUpSubmit changeCloseStat={changeCloseStat} /> : null}
 
       <div className="Toilet">
         <EventHead eventname="toilet" />
-        <EventElementBox events={events} isClose={isClose} changeEventStatus={changeEventStatus} />
+        <EventElementBox events={events} close={isClose} changeEventStatus={changeEventStatus} />
       </div>
     </div>
   );

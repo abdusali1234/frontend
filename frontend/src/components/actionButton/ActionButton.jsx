@@ -1,5 +1,5 @@
 import "./ActionButton.css";
-import APIService from "../apiService/ApiService";
+// import APIService from "../apiService/ApiService";
 
 function ActionButton(props) {
   // const fetchResult = () => {
@@ -10,15 +10,19 @@ function ActionButton(props) {
 
   function submit() {
     if (props.action === "Confirm") {
-      console.log("confirm")
-    } else if (props.action === "Cancle") {
-      props.close()
+      console.log("confirm");
+    } else if (props.action === "Cancel") {
+      props.changeCloseStat();
     }
   }
 
+  // function Cancel() {
+  //   props.changeCloseStat()
+  // }
+
   return (
     <div className="event-head">
-      <button className={`event-button ${props.action}`} onClick={submit}>{props.action}</button>
+      <button className={`event-button ${props.action}`} onClick={props.changeCloseStat}>{props.action}</button>
     </div>
   );
 }
